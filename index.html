@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Snippets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono," rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <section class="wrapper">
+        <img src="code-snippets/venveo.png" alt="" class="logo">
+        <section class="separate">
+            <h1><span class="code">const</span>, <span class="code">let</span>, and <span class="code">var</span></h1>
+            <p>Don't be fooled by <span>const</span>, it's not immutable. Properties within a constant variable can be mutated, but the difference is the variable cannot be <em>reassigned</em> a new value.</p>
+            <blockquote>Difference between <b>declaring</b> and <b>assigning</b> variables.</blockquote>
+            <p><span class="code-small">const</span> lets you assign a variable and be sure that it will NOT be overwritten or reassigned.</p>
+            <p><span class="code-small">let</span> allows you to assign a variable and overwrite the <em>value</em> of the variable. It still cannot be declared as a new variable twice, just like const.</p>
+            <p><span class="code-small">var</span> is not "bad" necessarily, it just lets you do things you may not want to do and not tell you you're doing them. Like declaring a variable twice.</p>
+            <img src="code-snippets/variables.png" alt="">
+        </section>
+
+        <section class="separate">
+            <h1>Declared Functions VS. Arrow Functions</h1>
+            <p>Arrow functions can be inserted anywhere a regular declared function can be inserted. They will give the same result, but do not <em>behave</em> the same.</p>
+            <img src="code-snippets/functions.png" alt="">
+            <button id="button">
+                Click This
+            </button>
+            <p><span class="code-small">this</span> is the most important difference in arrow functions. In a declared function, <span class="code-small">this</span> is bound to the function itself. In arrow functions, <span class="code-small">this</span> is bound to the scope of the containing function. This is especially important in event listeners.</p>
+        </section>
+    </section>
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
